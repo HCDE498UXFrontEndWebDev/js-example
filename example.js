@@ -5,6 +5,8 @@
 // To use the VS code debugger, first click on the "pages" icon in the top left
 // Then click "open folder" and open the folder that this file is in
 
+// Now we need to install some extensions: ESLint, Chrome Debugger, and Code Runner
+
 // Now, we can run the .js file from within VS code. Click the "play" button on the top right of the screen and the code below will run
 
 let intro = "hello world";
