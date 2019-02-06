@@ -1,3 +1,3 @@
 # Intro to Javascript and Debugger Demo
 
-This demo will go over how to use the VS Code debugger and quickly utilize some of the basic functions of JS
+This demo will go over how to use the VS Code debugger and quickly utilize some of the basic functions of JS. Open the example.js file to get started.
