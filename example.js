@@ -23,3 +23,74 @@ console.log(intro);
 // Use the play on the top of this window to continue on in the program
 
 console.log("hello world again");
+
+// When checking for equality, use === and !=== for preciseness
+console.log("42" == 42);
+console.log("42" === 42);
+
+console.log("10" != 10);
+console.log("10" !== 10);
+
+// some types can be coerced into another, this code will not cause errors like it would in python
+let stringCoercion = "10" + 5;
+
+let numberCoercion = "10" - 5;
+
+console.log(stringCoercion);
+console.log(numberCoercion);
+
+// parseInt is a function that tries to parse an integer from a string
+let fixedNumber = parseInt(stringCoercion);
+
+console.log(typeof fixedNumber);
+
+// javascript objects are similar to dictionaries in python
+let charmander = {
+  name: "Charmander",
+  type: "fire",
+  level: 14,
+  info: {
+    description: "fire lizard",
+    evolution: "charmeleon"
+  }
+};
+
+let chikorita = {
+  name: "Chikorita",
+  type: "grass",
+  level: 12,
+  info: {
+    description: "friendly pear",
+    evolution: "bayleef"
+  }
+};
+
+console.log(charmander.type);
+console.log(chikorita.info.evolution);
+
+// arrays are a special type of object in js, but works similarly to python besides syntax differences
+
+let myPokemon = [chikorita, charmander];
+
+console.log(myPokemon);
+
+console.log("my best pokemon: " + myPokemon[0]);
+
+console.log("my best pokemon: " + myPokemon[0].name);
+
+console.log("I have" + myPokemon.length + " pokemon");
+
+// functions and control structures, likely very familiar
+function battle(firstPokemon, secondPokemon) {
+  if (firstPokemon.level > secondPokemon.level) {
+    console.log(firstPokemon.name + " wins!");
+  } else {
+    console.log(secondPokemon.name + " wins!");
+  }
+}
+
+battle(chikorita, charmander);
+
+// myPokemon.forEach(function(pokemon) {
+//   pokemon.level = 100;
+// });
